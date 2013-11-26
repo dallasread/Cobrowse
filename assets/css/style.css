@@ -4,7 +4,6 @@
 #cobrowse html, #cobrowse body, #cobrowse div, #cobrowse span, #cobrowse applet, #cobrowse object, #cobrowse iframe, #cobrowse h1, #cobrowse h2, #cobrowse h3, #cobrowse h4, #cobrowse h5, #cobrowse h6, #cobrowse p, #cobrowse blockquote, #cobrowse pre, #cobrowse a, #cobrowse abbr, #cobrowse acronym, #cobrowse address, #cobrowse big, #cobrowse cite, #cobrowse code, #cobrowse del, #cobrowse dfn, #cobrowse em, #cobrowse img, #cobrowse ins, #cobrowse kbd, #cobrowse q, #cobrowse s, #cobrowse samp, #cobrowse small, #cobrowse strike, #cobrowse strong, #cobrowse sub, #cobrowse sup, #cobrowse tt, #cobrowse var, #cobrowse b, #cobrowse u, #cobrowse i, #cobrowse center, #cobrowse dl, #cobrowse dt, #cobrowse dd, #cobrowse ol, #cobrowse ul, #cobrowse li, #cobrowse fieldset, #cobrowse form, #cobrowse label, #cobrowse legend, #cobrowse table, #cobrowse caption, #cobrowse tbody, #cobrowse tfoot, #cobrowse thead, #cobrowse tr, #cobrowse th, #cobrowse td, #cobrowse article, #cobrowse aside, #cobrowse canvas, #cobrowse details, #cobrowse embed, #cobrowse figure, #cobrowse figcaption, #cobrowse footer, #cobrowse header, #cobrowse hgroup, #cobrowse menu, #cobrowse nav, #cobrowse output, #cobrowse ruby, #cobrowse section, #cobrowse summary, #cobrowse time, #cobrowse mark, #cobrowse audio, #cobrowse video {   margin: 0;   padding: 0;   border: 0;   font-size: 100%;   font: inherit;   vertical-align: baseline; } #cobrowse article, #cobrowse aside, #cobrowse details, #cobrowse figcaption, #cobrowse figure, #cobrowse footer, #cobrowse header, #cobrowse hgroup, #cobrowse menu, #cobrowse nav, #cobrowse section {   display: block; } #cobrowse body {   line-height: 1; } #cobrowse ol, #cobrowse ul {   margin-left: 25px;   margin-top: 20px; } #cobrowse blockquote, #cobrowse q {   quotes: none; } #cobrowse blockquote:before, #cobrowse blockquote:after, #cobrowse q:before, #cobrowse q:after {   content: '';   content: none; } #cobrowse table {   border-collapse: collapse;   border-spacing: 0; }
 #cobrowse, #cobrowse input, #cobrowse textarea, #cobrowse_control_center, #cobrowse_control_center input, #cobrowse_control_center textarea { font-family: Helvetica Nueue, Helvetica, Arial, Sans Serif; font-size: 14px; }
 
-
 .remote-pointer {
   transition : border 250ms ease;
   -webkit-transition : border 250ms ease;
@@ -39,38 +38,67 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: #eee;
-  padding: 5px;
+  background: rgb(53,53,53); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(53,53,53,1) 0%, rgba(20,20,20,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(53,53,53,1)), color-stop(100%,rgba(20,20,20,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(20,20,20,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(20,20,20,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(53,53,53,1) 0%,rgba(20,20,20,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(53,53,53,1) 0%,rgba(20,20,20,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#353535', endColorstr='#141414',GradientType=0 ); /* IE6-9 */
+  padding: 8px 6px 6px 6px;
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+  color: #ccc;
 }
 
-#cobrowse_activation_code {
-  
-}
-
-#cobrowse_activation_code_text {
+#cobrowse_activation_code_text, #cobrowse_start {
   margin: 0 5px;
   width: 3em;
-  padding: 3px 6px;
+  padding: 3px 9px;
   text-align: center;
   border-radius: 4px;
-  background: #777;
   box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.3);
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
   border: none;
   color: #fff;
   font-weight: bold;
+  background: rgb(102,160,70); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(102,160,70,1) 0%, rgba(70,163,21,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(102,160,70,1)), color-stop(100%,rgba(70,163,21,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(102,160,70,1) 0%,rgba(70,163,21,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(102,160,70,1) 0%,rgba(70,163,21,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(102,160,70,1) 0%,rgba(70,163,21,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(102,160,70,1) 0%,rgba(70,163,21,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66a046', endColorstr='#46a315',GradientType=0 ); /* IE6-9 */
+  
 }
 
 #cobrowse_destroy_session {
   text-align: center;
   border-radius: 4px;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.6);
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  padding: 5px 10px;
+  float: right;
   background: #777;
-  box-shadow: inset 1px 1px 4px rgba(0, 0, 0, 0.3);
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
-  padding: 3px 6px;
+  margin-top: -2px;
+}
+
+#cobrowse_destroy_session:hover {
+  color: #fff;
+  background: rgb(204,83,83); /* Old browsers */
+  background: -moz-linear-gradient(top,  rgba(204,83,83,1) 0%, rgba(204,0,0,1) 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(204,83,83,1)), color-stop(100%,rgba(204,0,0,1))); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  rgba(204,83,83,1) 0%,rgba(204,0,0,1) 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  rgba(204,83,83,1) 0%,rgba(204,0,0,1) 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  rgba(204,83,83,1) 0%,rgba(204,0,0,1) 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  rgba(204,83,83,1) 0%,rgba(204,0,0,1) 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cc5353', endColorstr='#cc0000',GradientType=0 ); /* IE6-9 */
 }
 
 
-#cobrowse, #cobrowse_control_center, #cobrowse_start, #cobrowse_already_have, #cobrowse_activation_code_form {
+#cobrowse_start, #cobrowse_already_have, #cobrowse_activation_code_form {
   display: none;
 }
