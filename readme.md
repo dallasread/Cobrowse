@@ -5,7 +5,6 @@
 3. `irb`
 4. `require 'uglifier'`
 5. `cobrowser = Uglifier.compile( Dir.glob(["dependencies/*.js", "lib/*.js"]).map{|f| File.directory?(f) ? nil : File.read(f)}.join("\n"), comments: :none)`
-6. `cobrowser = cobrowser.gsub("assets/css/style.css", "https://www.daljs.org/cobrowser.min.css")`
 7. `File.open("cobrowser.min.js", 'w') { |file| file.write(cobrowser) }`
 8. `File.open("../netbuild/public/cobrowser.min.js", 'w') { |file| file.write(cobrowser) }`
 
