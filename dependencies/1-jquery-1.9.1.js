@@ -3,7 +3,6 @@ window.cobrowser_jquery = false;
 function _cobrowser_jquery() {
   if (typeof jQuery === 'undefined' || (typeof jQuery != 'undefined' && !(/[1-9]\.(9|10).[1-9]/.test(jQuery.fn.jquery))))
   {
-  
   	if (!window.cobrowser_jquery)
   	{
       /*!
@@ -9606,7 +9605,8 @@ function _cobrowser_jquery() {
       
   		window.cobrowser_jquery = true;
   	}
-  
+    
+    setTimeout(_cobrowser_jquery, 50);
   } else {
     _cobrowser_load();
   }
