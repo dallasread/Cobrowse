@@ -15,4 +15,4 @@ File.open("../netbuild/public/cobrowser.min.css", 'w') { |file| file.write(css) 
 ```
 
 ### Start Faye
-`rackup faye.ru -s thin -E production`
+`rackup thin.ru -s thin -E production -p 9000`
